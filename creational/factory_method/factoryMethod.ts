@@ -1,4 +1,3 @@
-
 // Interface of the Shape 
 interface Shape {
     draw(param?: any): void;
@@ -17,7 +16,7 @@ class Circle implements Shape {
     }
 }
 
-//ShapeFactory Class retunrs Shape type of Object
+// ShapeFactory Class retunrs Shape type of Object
 class ShapeFactory {
     public getShape(shapeType: string){
         switch(shapeType) {
@@ -28,7 +27,7 @@ class ShapeFactory {
     }
 }
 
-//main function
+// main function
 function main() {
   var shapeFactoryObj = new ShapeFactory();
   var circle = shapeFactoryObj.getShape("Circle");
